@@ -8,7 +8,7 @@ app.use(express.json());
 
 
 //ROUTES
-const instance = new RoutesExports(app).callAllRoutes();
+new RoutesExports(app).callAllRoutes();
 
 app.listen(process.env.PORT, function (e) {
     console.log("Server ligado em " + process.env.PORT);
