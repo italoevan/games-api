@@ -7,9 +7,9 @@ app.use(express.urlencoded({extended:false}));
 app.use(express.json());
 
 
-//ROUTES
+//ALL ROUTES
 new RoutesExports(app).callAllRoutes();
 
 app.listen(process.env.PORT, function (e) {
     console.log("Server ligado em " + process.env.PORT);
-});
+}); 
